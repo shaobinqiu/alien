@@ -13,7 +13,7 @@ class Alien(Sprite):
         #加载外星人图像，并设置其rect属性
         new_image = pygame.image.load('images/alien.bmp')
         width,height = new_image.get_size()
-        self.image = pygame.transform.smoothscale(new_image,(width//16,height//16))
+        self.image = pygame.transform.smoothscale(new_image,(width//32,height//32))
         self.rect = self.image.get_rect()
 
         #每个外星人最初都在屏幕右上角附件
